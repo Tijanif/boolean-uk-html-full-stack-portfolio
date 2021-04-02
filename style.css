@@ -81,11 +81,34 @@ em {
 }
 
 /* ABOUT ME SECTION */
-.about-me {
+.about-me-section {
   background-color: var(--white);
   margin-bottom: 5px;
+
+  display: grid;
+  grid-template: ". about-me ." auto/ 1fr 65ch 1fr;
+  padding: 20px 0px;
 }
 
+.about-me {
+  display: grid;
+  grid-area: about-me;
+  padding: 30px 0px;
+  grid-gap: 15px;
+}
+
+.about-me h2 {
+  justify-self: center;
+  font-size: 2rem;
+}
+
+.about-me h3 {
+  padding-top: 20px;
+}
+
+.about-me ul {
+  columns: 2;
+}
 /* PORTFOLIO  SECTION */
 .portfolio {
   background-color: var(--portfolioBg);
