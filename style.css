@@ -145,7 +145,7 @@ em {
   text-align: center;
 }
 
-.portfolio article .read-more-button {
+.portfolio article .view-project-button {
   display: block;
   background-color: var(--portfolioB);
   text-align: center;
