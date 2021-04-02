@@ -113,8 +113,54 @@ em {
 .portfolio {
   background-color: var(--portfolioBg);
   margin-bottom: 5px;
+
+  display: grid;
+  grid-template:
+    "portfolio-title portfolio-title portfolio-title" 50px
+    "portfolio-project1 portfolio-project2 portfolio-project3" auto /
+    1fr 1fr 1fr;
+  grid-gap: 35px;
+  padding: 50px;
 }
 
+.portfolio-title {
+  grid-area: portfolio-title;
+  justify-self: center;
+}
+.portfolio-project1 {
+  grid-area: portfolio-project1;
+}
+.portfolio-project2 {
+  grid-area: portfolio-project2;
+}
+.portfolio-project3 {
+  grid-area: portfolio-project3;
+}
+article {
+  background-color: var(--white);
+  padding: 20px;
+  border: 5px solid var(--portfolioB);
+  border-radius: 10px;
+  text-align: center;
+}
+
+article .read-more-button {
+  display: block;
+  background-color: var(--portfolioB);
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+article .github {
+  display: block;
+  color: var(--portfolioB);
+  text-align: center;
+  margin-top: 10px;
+}
 /* EXPEREINCE SECTION */
 .experience {
   background-color: var(--white);
