@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --headerTeal: #4fb7ac;
+  --white: #fff;
+  --portfolioBg: #feecee;
+  --portfolioB: #af1557;
+  --footer: #1d313a;
+}
+
+body {
+  background-color: var(--footer);
+}
+/* HEADER SECTION */
+.header {
+  padding: 20px;
+  background-color: var(--headerTeal);
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+.header .header-nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.header .header-nav ul li {
+  display: inline;
+  margin-right: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 3px 3px 10px rgb(121, 121, 121);
+  background-color: var(--white);
+}
+
+.header a {
+  color: var(--headerTeal);
+  text-decoration: none;
+}
+
+.header nav ul a:hover {
+  text-decoration: underline;
+}
+
+/*  HEADER INFO*/
+.header-info {
+  display: grid;
+  grid-template:
+    ". h2 ." auto
+    ". p ." auto/
+    1fr 65ch 1fr;
+  padding: 56px;
+}
+
+.header-info h2 {
+  grid-area: h2;
+  font-size: 7rem;
+  margin-bottom: 20px;
+}
+
+.header-info p {
+  grid-area: p;
+  font-size: 1.2rem;
+}
+
+.header-info strong,
+em {
+  color: #000;
+}
+
+.header-info em {
+  text-decoration: underline;
+}
+
+/* ABOUT ME SECTION */
+.about-me {
+  background-color: var(--white);
+  margin-bottom: 5px;
+}
+
+/* PORTFOLIO  SECTION */
+.portfolio {
+  background-color: var(--portfolioBg);
+  margin-bottom: 5px;
+}
+
+/* EXPEREINCE SECTION */
+.experience {
+  background-color: var(--white);
+  margin-bottom: 5px;
+}
