@@ -215,4 +215,5 @@ footer {
   padding: 2px;
   font-size: 0.9rem;
   text-align: center;
+  box-shadow: 1.5px 1.5px 5px black;
 }
