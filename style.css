@@ -143,6 +143,7 @@ em {
   border: 5px solid var(--portfolioB);
   border-radius: 10px;
   text-align: center;
+  box-shadow: 3px 3px 10px var(--portfolioB);
 }
 
 .portfolio article .view-project-button {
